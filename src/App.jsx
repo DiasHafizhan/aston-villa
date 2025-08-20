@@ -16,8 +16,8 @@ function App() {
         <Legacy />
         <CardLayout />
         <ShopLayout />
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }
