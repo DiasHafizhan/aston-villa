@@ -3,15 +3,18 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePages from './Pages/Home'
+import ErrorPages from './Pages/404'
+import NewsPages from './Pages/News'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePages />
+    element: <HomePages />,
+    errorElement: <ErrorPages />
   },
   {
     path: '/news',
-    element: <div>News</div>
+    element: <NewsPages />
   },
 ])
 
