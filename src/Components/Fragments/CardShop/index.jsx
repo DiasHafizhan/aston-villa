@@ -1,4 +1,4 @@
-import { Shirt } from "lucide-react"
+import { FaTshirt } from "react-icons/fa";
 import { Link } from "react-router-dom"
 
 const CardShop = (props) => {
@@ -13,7 +13,7 @@ const CardShop = (props) => {
       <div className="text-white flex flex-col gap-3 justify-center items-center w-full">
         <p className="text-lg font-bold">25/26 {title}</p>
         <span className="flex items-center gap-2">
-          <Shirt className="w-7" />
+          <FaTshirt className="text-lg" />
           <Link to="" className="text-base font-bold hover:underline">SHOP NOW</Link>
         </span>
       </div>

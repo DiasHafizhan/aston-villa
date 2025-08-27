@@ -1,4 +1,5 @@
-import { ChevronDown, Globe, Menu, Search } from "lucide-react"
+import { CiGlobe } from "react-icons/ci";
+import { IoChevronDownOutline } from "react-icons/io5";
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
@@ -29,9 +30,9 @@ const Navbar = () => {
         <div className="flex flex-col w-full">
           <div className="flex p-0 justify-end border-b py-2 border-white">
             <Link className="flex gap-2 items-center text-base font-semibold ">
-              <Globe className="text-base font-semibold " />
+              <CiGlobe className="text-2xl" />
               EN
-              <ChevronDown className="text-base " />
+              <IoChevronDownOutline className="text-lg" />
             </Link>
           </div>
 
@@ -41,10 +42,14 @@ const Navbar = () => {
                 <Link to="/news" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">News</Link>
               </li>
               <li>
-                <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">Ticket News</Link>
+                <Link to="/tickets" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
+                  Ticket News
+                </Link>
               </li>
               <li>
-                <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">Matches</Link>
+                <Link to="/matches" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
+                  Matches
+                </Link>
               </li>
               <li>
                 <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">Teams</Link>
@@ -61,8 +66,8 @@ const Navbar = () => {
             </ul>
             <div className="flex gap-3 items-center">
               <img src="https://www.avfc.co.uk/sponsors/header/adidas.png" alt="" className="w-[40px]" />
-              <Search />
-              <Menu />
+              {/* <Search />
+              <Menu /> */}
             </div>
           </div>
         </div>

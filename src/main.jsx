@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePages from './Pages/Home'
 import ErrorPages from './Pages/404'
 import NewsPages from './Pages/News'
+import TicketsPages from './Pages/Tickets'
+import MatchesPages from './Pages/Matches'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
   {
     path: '/news',
     element: <NewsPages />
+  },
+  {
+    path: '/tickets',
+    element: <TicketsPages />
+  },
+  {
+    path: '/matches',
+    element: <MatchesPages />
   },
 ])
 

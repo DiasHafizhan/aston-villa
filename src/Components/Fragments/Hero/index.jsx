@@ -5,7 +5,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import { ScrollText } from "lucide-react"
+import { LuScrollText } from "react-icons/lu";
 import { Link } from "react-router-dom"
 
 const HeroLayout = () => {
@@ -26,7 +26,7 @@ const HeroLayout = () => {
             <div className="absolute top-48 text-white">
               <div className="flex items-center gap-5">
                 <p className="text-sm flex items-center gap-2">
-                  <ScrollText className="w-4" />
+                  <LuScrollText />
                   3 days ago
                 </p>
                 <Link className="text-[#94BEE5] text-sm" to="">Featured</Link>
@@ -49,7 +49,7 @@ const HeroLayout = () => {
             <div className="absolute top-48 text-white">
               <div className="flex items-center gap-5">
                 <p className="text-sm flex items-center gap-2">
-                  <ScrollText className="w-4" />
+                  <LuScrollText />
                   3 days ago
                 </p>
                 <Link className="text-[#94BEE5] text-sm" to="">Featured</Link>

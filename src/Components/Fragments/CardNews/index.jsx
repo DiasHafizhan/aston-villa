@@ -1,4 +1,4 @@
-import { Volleyball } from "lucide-react"
+import { IoFootball } from "react-icons/io5";
 
 const CardNews = (props) => {
   const { gender, image, time, title, classname } = props
@@ -14,7 +14,7 @@ const CardNews = (props) => {
         <div className={`px-[4%] w-full py-5 absolute rounded-b-2xl bottom-0 ${classname}`}>
           <div className="flex items-center gap-4">
             <p className="flex items-center gap-2">
-              <Volleyball className="w-4" />
+              <IoFootball className="text-lg" />
               {time}
             </p>
             <p>{gender}</p>

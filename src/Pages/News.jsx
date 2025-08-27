@@ -1,16 +1,16 @@
 import CardNews from "@/Components/Fragments/CardNews"
-import CardPoster from "@/Components/Fragments/CardPoster"
 import Footer from "@/Components/Fragments/Footer"
+import List from "@/Components/Fragments/List"
 import Navbar from "@/Components/Fragments/Navbar"
 import NewsLayout from "@/Components/Layouts/NewsLayout"
-import { ScrollText } from "lucide-react"
+// import { ScrollText } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const NewsPages = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-28 pb-4 px-[3%] bg-[#480024] mb-14">
+      <div className="pt-28 px-[3%] bg-[#480024] mb-14">
         <h1 className="text-6xl font-Medula font-medium text-white mb-7">FEATURED</h1>
         <div className="flex flex-wrap gap-5 mb-10">
           <div className="w-[49%] relative cursor-pointer rounded-xl">
@@ -22,7 +22,7 @@ const NewsPages = () => {
             <div className="absolute inset-0 bg-gradient-to-t pl-4 top-[30rem] rounded-xl text-white from-black/90 to-transparent">
               <div className="flex items-center gap-8">
                 <p className="flex items-center text-sm gap-2">
-                  <ScrollText className="w-4" />
+                  {/* <ScrollText className="w-4" /> */}
                   19 minutes ago
                 </p>
                 <Link to="" className="text-[#94BEE5] text-sm">Club</Link>
@@ -43,7 +43,7 @@ const NewsPages = () => {
                 <div className="absolute top-52">
                   <div className="flex items-center gap-8">
                     <p className="flex items-center text-sm gap-2">
-                      <ScrollText className="w-4" />
+                      {/* <ScrollText className="w-4" /> */}
                       19 minutes ago
                     </p>
                     <Link to="" className="text-[#94BEE5] text-sm">Sport</Link>
@@ -64,7 +64,7 @@ const NewsPages = () => {
                   <div className="absolute top-44">
                     <div className="flex items-center gap-8">
                       <p className="flex items-center text-sm gap-2">
-                        <ScrollText className="w-4" />
+                        {/* <ScrollText className="w-4" /> */}
                         19 minutes ago
                       </p>
                       <Link to="" className="text-[#94BEE5] text-sm">Men</Link>
@@ -83,7 +83,7 @@ const NewsPages = () => {
                   <div className="absolute top-44">
                     <div className="flex items-center gap-8">
                       <p className="flex items-center text-sm gap-2">
-                        <ScrollText className="w-4" />
+                        {/* <ScrollText className="w-4" /> */}
                         19 minutes ago
                       </p>
                       <Link to="" className="text-[#94BEE5] text-sm">Men</Link>
@@ -96,38 +96,7 @@ const NewsPages = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-7 text-white">
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            All
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            Men
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            Women
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            U21
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            U18
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            Club
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            Tikects
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            Community
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            اللغة العربية
-          </Link>
-          <Link to="" className="border-b-4 border-transparent hover:border-white duration-300 transition-all ease-in-out">
-            Español
-          </Link>
-        </div>
+        <List />
       </div>
 
       <div className="px-[3%]">
@@ -140,7 +109,7 @@ const NewsPages = () => {
         </div>
 
 
-        <NewsLayout title="All News">
+        <NewsLayout title="All News" classname="text-5xl mb-8 font-semibold font-roboto">
           <CardNews
             classname="bg-white"
             image="https://img.gc.avfcservices.co.uk/fit-in/1400x1400/c1c7ee50-7697-11f0-b4c9-55861495fbc7.jpg "

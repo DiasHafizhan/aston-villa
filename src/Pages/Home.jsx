@@ -16,7 +16,7 @@ const HomePages = () => {
       <div>
         <HeroLayout />
         <Legacy />
-        <NewsLayout title="Latest from Aston Villa Football Club">
+        <NewsLayout title="Latest from Aston Villa Football Club" classname="text-5xl font-medium font-Medula mb-14">
           <CardNews
             classname="bg-white"
             image="https://img.gc.avfcservices.co.uk/fit-in/1400x1400/c1c7ee50-7697-11f0-b4c9-55861495fbc7.jpg "

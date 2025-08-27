@@ -1,9 +1,9 @@
 
 const NewsLayout = (props) => {
-  const {children, title} = props
+  const {children, title, classname} = props
   return (
     <div className="px-[3%] mb-20 w-full">
-      <h1 className="font-Medula font-medium text-5xl mb-14">
+      <h1 className={`${classname}`}>
         {title}
       </h1>
       <div className="flex flex-wrap gap-4">

@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react"
+import { FaChevronRight } from "react-icons/fa";
 import Button from "../Elements/Button"
 import CardShop from "../Fragments/CardShop"
 
@@ -26,7 +26,7 @@ const ShopLayout = () => {
           />
         </div>
         <div className="flex justify-center items-center mt-10">
-          <Button classname="flex gap-2 items-center">Visit the Official Online Aston Villa Store <ChevronRight className="w-7" /></Button>
+          <Button classname="flex gap-2 items-center">Visit the Official Online Aston Villa Store <FaChevronRight className="text-lg" /></Button>
         </div>
       </div>
     </div>
